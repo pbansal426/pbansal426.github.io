@@ -272,24 +272,62 @@
           </div>
           <div class="col-xs-12 col-md-6">
             <h3>MVP</h3><br>
-            <h4>AI Audio Generator Plugin (MVP)</h4>
-            <p>MVP: A Plugin that generates audio using free AI (HuggingFace, Magenta, or OpenAI).</p>
-            <p><strong>Goal:</strong> Process a text prompt (e.g., "Create a simple piano melody") into a MIDI melody.</p>
+            <h4>AI Audio Generator Plugin</h4>
+            <p>
+                A plugin that uses free AI tools (such as HuggingFace, Magenta, or OpenAI) to generate musical content directly inside a DAW.
+            </p>
+        
+            <p><strong>Goal:</strong> Convert a user text prompt (e.g., "Create a simple piano melody") into one of two types of musical output: <strong>MIDI</strong> or <strong>Audio</strong>.</p>
+        
             <ul>
-                <li>Piano roll updated with AI-generated melody.</li>
+                <li><strong>MIDI Generation:</strong> For users who already have a software instrument and only need a MIDI sequence.</li>
+                <li><strong>Audio Generation:</strong> For users who have no instrument loaded and want a complete audio clip ready to place on a track.</li>
             </ul>
+        
+            <p><strong>Workflow:</strong></p>
+            <ol>
+                <li><strong>User selects output type:</strong> MIDI or Audio.</li>
+                <li>
+                    <strong>Interactive Questionnaire:</strong> The plugin guides the user through a series of at least 10 questions:
+                    <ul>
+                        <li>Basic info: Tempo, number of measures, key, time signature.</li>
+                        <li>Specific details: Instrument choice, genre, mood, style, rhythm, etc.</li>
+                        <li>Questions use both multiple-choice and text-response formats for precision.</li>
+                        <li><strong>Note:</strong> Only one instrument is supported at a time to encourage creativity and avoid full automation.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Data Transfer:</strong> The plugin sends all collected input data to a Python backend script via API call.
+                </li>
+                <li>
+                    <strong>AI Generation:</strong> The Python script uses an AI music generator (via API key) to process the user request and generate the output in the desired format (MIDI or audio).
+                </li>
+                <li>
+                    <strong>Output:</strong> 
+                    <ul>
+                        <li>If <strong>MIDI</strong>, the user pastes the MIDI into their DAW’s piano roll or MIDI track.</li>
+                        <li>If <strong>Audio</strong>, the user adds the generated audio clip directly to the DAW track using the plugin.</li>
+                    </ul>
+                </li>
+            </ol>
+        
             <p><strong>Visuals:</strong></p>
-            <img src="assets/images/input.png" alt="Text input prompt" style="height: auto; width: 450px;" /> Leads to <br><br>
+            <img src="assets/images/input.png" alt="Text input prompt" style="height: auto; width: 450px;" />
+            <p>Leads to:</p><br>
             <img src="assets/images/midi.png" alt="Generated MIDI melody on piano roll" style="height: auto; width: 450px;" />
-            <p><strong>Video:</strong></p>
+        
+            <p><strong>Video Demo:</strong></p>
             <video width="500" height="auto" controls>
                 <source src="assets/mvp.mov" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
+        
 
 
         </div>
+
+        <div><h1>FINAL PROJECT</h1></div>
       </div>
     </div>
   </div>
