@@ -1,252 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pratham | Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratham | Portfolio</title>
 
-  <!-- AOS for scroll animations -->
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- AOS for scroll animations -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="site-nav">
+      <div class="nav-inner">
+        <a class="logo" href="/">Pratham Bansal</a>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <!-- NAV -->
-  <nav class="site-nav">
-    <div class="nav-inner">
-      <a class="logo" href="/">Pratham Bansal</a>
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <!-- HERO -->
+    <section id="hero" class="section hero" data-aos="fade-up">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1>Hello, I’m <span class="accent">Pratham Bansal</span>.</h1>
+          <p class="subhead">
+            I’m a student at Vernon Hills High School in Chicago. Currently
+            working on college applications, doing school-work, and
+            programming!.
+          </p>
+          <div class="social-links">
+            <a
+              class="social-btn github"
+              href="https://github.com/pbansal426"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a
+              class="social-btn linkedin"
+              href="https://www.linkedin.com/in/pratham-bansal-958174323"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a
+              href="assets/Pratham_Bansal_Resume.pdf"
+              
+              class="social-btn"
+            >
+              <i class="fa fa-download"></i>
+              Download Resume
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="assets/pfp.jpeg" alt="Pratham Bansal" />
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects" data-aos="fade-up">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <!-- Repeat this block for each project -->
+        <div class="project-card" data-aos="zoom-in">
+          <div class="project-info">
+            <h3>Flowlyst</h3>
+            <p>
+              A productivity web app that helps students manage assignments and
+              stay organized through a clean, intuitive interface. Built with
+              <strong>HTML, CSS, JavaScript</strong>, and
+              <strong>Python</strong>. Submitted to 2023 Congressional App
+              Challenge.
+            </p>
+            <div class="project-links">
+              <a
+                class="project-btn code alt"
+                href="https://github.com/pbansal426/Flowlyst"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div class="project-visual">
+            <img
+              src="assets/images/Flowlyst-image.png"
+              alt="Flowlyst App Preview"
+            />
+          </div>
+        </div>
+        <div class="project-card" data-aos="zoom-in">
+          <div class="project-info">
+            <h3>CourseVault</h3>
+            <p>
+              A place for students to get high quality online courses
+              <b>completely free of charge</b>. All funds come from normal users
+              that aren't students.
+            </p>
+            <div class="project-links">
+              <a
+                class="project-btn demo alt"
+                href="https://pbansal426.github.io/CourseVault/"
+                target="_blank"
+                >Demo</a
+              >
+              <a
+                class="project-btn code alt"
+                href="https://github.com/pbansal426/CourseVault/"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div class="project-visual">
+            <img
+              src="assets/images/coursevault.png"
+              alt="Flowlyst App Preview"
+            />
+          </div>
+        </div>
+        <div class="project-card" data-aos="zoom-in">
+          <div class="project-info">
+            <h3>Lock In</h3>
+            <p>
+              A competitive school productivity web app that helps stay on task
+              and get things done by using a <b>timer</b>, <b>to-do list</b>,
+              and <b>competition with classmates</b>. Submitted to the 2025
+              Steam Showcase with a partner.
+            </p>
+            <div class="project-links">
+              <a
+                class="project-btn demo alt"
+                href="https://pbansal426.github.io/Lock-In/"
+                target="_blank"
+                >Video Demo</a
+              >
+              <a
+                class="project-btn code alt"
+                href="https://github.com/vidx0/Lock_In"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div class="project-visual">
+            <img src="assets/images/lockin.png" alt="Flowlyst App Preview" />
+          </div>
+        </div>
+        <div class="project-card" data-aos="zoom-in">
+          <div class="project-info">
+            <h3>MediCube</h3>
+            <p>
+              MediCube is a low-cost, AI-powered smart pill dispenser and
+              prescription support system designed to empower elderly
+              individuals living independently or in low-income households while
+              providing caregivers with an accessible, real-time medication
+              management platform.
+              <br /><br />
+              Submitted to 2025 Hack VH as a team of 4. We won 2nd place in the
+              Engineering category.
+            </p>
+            <div class="project-links">
+              <!-- ?<a class="project-btn demo alt" href="YOUR_DEMO_LINK" target="_blank">Demo</a> -->
+              <a
+                class="project-btn code alt"
+                href="https://github.com/pbansal426/MediCube"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div class="project-visual">
+            <!-- <img src="assets/images/Flowlyst-image.png" alt="Flowlyst App Preview" /> -->
+          </div>
+        </div>
+        <div class="project-card" data-aos="zoom-in">
+          <div class="project-info">
+            <h3>Streamline</h3>
+            <p>
+              An audio plugin that creates musical audio/midi clips from user
+              input with the help of AI.
+            </p>
+            <div class="project-links">
+              <a
+                class="project-btn demo alt"
+                href="https://pbansal426.github.io/Streamline/"
+                target="_blank"
+                >Info</a
+              >
+              <a
+                class="project-btn code alt"
+                href="https://github.com/pbansal426/Streamline"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div class="project-visual">
+            <img
+              src="assets/images/streamline.png"
+              alt="Flowlyst App Preview"
+            />
+          </div>
+        </div>
+        <div class="project-card" data-aos="zoom-in">
+          <div class="project-info">
+            <h3>Pobi Ree's Album Page</h3>
+            <p>
+              A simple website used for showcasing an album composed by the
+              artist Pobi Ree. Built with <strong>HTML and CSS.</strong>
+            </p>
+            <div class="project-links">
+              <a
+                class="project-btn demo alt"
+                href="https://www.pobiree.com"
+                target="_blank"
+                >Visit</a
+              >
+              <a
+                class="project-btn code alt"
+                href="https://github.com/pbansal426/PobiReeAlbum"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div class="project-visual">
+            <!-- <img src="assets/images/streamline.png" alt="Flowlyst App Preview" /> -->
+          </div>
+        </div>
+        <div class="project-card" data-aos="zoom-in">
+          <div class="project-info">
+            <h3>School CS Event Websites</h3>
+            <p>
+              A set of webpages used to show important information about
+              school-held computer science events such as competitions or
+              hackathons.
+            </p>
+            <div class="project-links">
+              <a
+                class="project-btn demo alt"
+                href="https://vernonhillscs.github.io/"
+                target="_blank"
+                >Visit</a
+              >
+              <a
+                class="project-btn code alt"
+                href="https://github.com/vernonhillscs"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div class="project-visual">
+            <img src="assets/images/vhcs.png" alt="Flowlyst App Preview" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills" data-aos="fade-up">
+      <h2>My Skills</h2>
+      <ul class="skills-icons">
+        <li>
+          <i class="fab fa-js-square"></i>
+          <span>JavaScript</span>
+        </li>
+        <li>
+          <i class="fab fa-react"></i>
+          <span>React</span>
+        </li>
+        <li>
+          <i class="fab fa-python"></i>
+          <span>Python</span>
+        </li>
+        
+        <li>
+          <i class="fab fa-html5"></i>
+          <span>HTML5</span>
+        </li>
+        <li>
+          <i class="fab fa-css3-alt"></i>
+          <span>CSS3</span>
+        </li>
+        <li>
+          <i class="fab fa-git-alt"></i>
+          <span>Git</span>
+        </li>
+        <li>
+          <img src="assets/images/svg/flask.svg" alt="Flask Logo" class="custom-icon">
+          <span>Flask</span>
+        </li>
+        <li>
+          <img src="assets/images/svg/unity.svg" alt="Unity Logo" class="custom-icon">
+          <span>Unity</span>
+        </li>
+        <li>
+          <img src="assets/images/svg/cpp.svg" alt="C++ Logo" class="custom-icon">
+          <span>C++</span>
+        </li>
+        <li>
+          <img src="assets/images/svg/csharp.svg" alt="C# Logo" class="custom-icon">
+          <span>C#</span>
+        </li>
+        <li>
+          <img src="assets/images/svg/arduino.svg" alt="Arduino Logo" class="custom-icon">
+          <span>Arduino</span>
+        </li>
+        <li>
+          <img src="assets/images/svg/juce.svg" alt="JUCE Logo" class="custom-icon">
+          <span>JUCE</span>
+        </li>
       </ul>
-    </div>
-  </nav>
+    </section>
+    
 
-  <!-- HERO -->
-  <section id="hero" class="section hero" data-aos="fade-up">
-    <div class="hero-inner">
-      <div class="hero-text">
-        <h1>Hello, I’m <span class="accent">Pratham Bansal</span>.</h1>
-        <p class="subhead">
-          I’m a student at Vernon Hills High School in Chicago.  
-          Currently working on college applications, doing school-work, and programming!.
-        </p>
-        <div class="social-links">
-          <a class="social-btn github" href="https://github.com/pbansal426" target="_blank">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <a class="social-btn linkedin" href="https://www.linkedin.com/in/pratham-bansal-958174323" target="_blank">
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
-        </div>
-        
-        
-      </div>
-      <div class="hero-image">
-        <img src="assets/pfp.jpeg" alt="Pratham Bansal">
-      </div>
-    </div>
-  </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section projects" data-aos="fade-up">
-    <h2>My Projects</h2>
-    <div class="projects-grid">
-      <!-- Repeat this block for each project -->
-      <div class="project-card" data-aos="zoom-in">
-        <div class="project-info">
-          <h3>Flowlyst</h3>
-          <p>
-            A productivity web app that helps students manage assignments and stay organized through a clean, intuitive interface. 
-            Built with <strong>HTML, CSS, JavaScript</strong>, and <strong>Python</strong>. Submitted to 2023 Congressional App Challenge.
-          </p>
-          <div class="project-links">
-            <a class="project-btn code alt" href="https://github.com/pbansal426/Flowlyst" target="_blank">GitHub</a>
-          </div>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section experience" data-aos="fade-up">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <!-- Repeat for each role -->
+        <div class="timeline-item">
+          <h3>Job Title</h3>
+          <h4>Company Name</h4>
+          <p class="timeline-date">Start Date – End Date</p>
+          <p>Brief summary of responsibilities and achievements.</p>
         </div>
-        <div class="project-visual">
-          <img src="assets/images/Flowlyst-image.png" alt="Flowlyst App Preview" />
+        <!-- … -->
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section education" data-aos="fade-up">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Degree Name</h3>
+          <h4>University Name</h4>
+          <p class="timeline-date">Graduation Year</p>
+          <p>Major, Minor, GPA, Honors, etc.</p>
         </div>
       </div>
-      <div class="project-card" data-aos="zoom-in">
-        <div class="project-info">
-          <h3>CourseVault</h3>
-          <p>
-            A place for students to get high quality online courses <b>completely free of charge</b>. All funds come from normal users that aren't students.
-          </p>
-          <div class="project-links">
-            <a class="project-btn demo alt" href="https://pbansal426.github.io/CourseVault/" target="_blank">Demo</a>
-            <a class="project-btn code alt" href="https://github.com/pbansal426/CourseVault/" target="_blank">GitHub</a>
-          </div>
-        </div>
-        <div class="project-visual">
-          <img src="assets/images/coursevault.png" alt="Flowlyst App Preview" />
-        </div>
-      </div>
-      <div class="project-card" data-aos="zoom-in">
-        <div class="project-info">
-          <h3>Lock In</h3>
-          <p>
-            A competitive school productivity web app that helps stay on task and get things done by using a <b>timer</b>, <b>to-do list</b>, and <b>competition with classmates</b>. Submitted to the 2025 Steam Showcase with a partner.
-          </p>
-          <div class="project-links">
-            <a class="project-btn demo alt" href="https://pbansal426.github.io/Lock-In/" target="_blank">Video Demo</a>
-            <a class="project-btn code alt" href="https://github.com/vidx0/Lock_In" target="_blank">GitHub</a>
-          </div>
-        </div>
-        <div class="project-visual">
-          <img src="assets/images/lockin.png" alt="Flowlyst App Preview" />
-        </div>
-      </div>
-      <div class="project-card" data-aos="zoom-in">
-        <div class="project-info">
-          <h3>MediCube</h3>
-          <p>
-            MediCube is a low-cost, AI-powered smart pill dispenser and prescription support system designed to empower elderly individuals living independently or in low-income households while providing caregivers with an accessible, real-time medication management platform.
-            <br><br>
-            Submitted to 2025 Hack VH as a team of 4. We won 2nd place in the Engineering category.
-          </p>
-          <div class="project-links">
-            <!-- ?<a class="project-btn demo alt" href="YOUR_DEMO_LINK" target="_blank">Demo</a> -->
-            <a class="project-btn code alt" href="https://github.com/pbansal426/MediCube" target="_blank">GitHub</a>
-          </div>
-        </div>
-        <div class="project-visual">
-          <!-- <img src="assets/images/Flowlyst-image.png" alt="Flowlyst App Preview" /> -->
-        </div>
-      </div>
-      <div class="project-card" data-aos="zoom-in">
-        <div class="project-info">
-          <h3>Streamline</h3>
-          <p>
-            An audio plugin that creates musical audio/midi clips from user input with the help of AI.
+    </section>
+    <section id="resume" class="section">
+      <h2>Resume</h2>
+      <p>
+        Download my resume
+        <a href="assets/Pratham_Bansal_Resume.pdf" target="_blank">here</a>.
+      </p>
+    </section>
+    <!-- CONTACT -->
+    <section id="contact" class="section contact" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <p>
+        Please reach out at
+        <a href="mailto:prathamb426@gmail.com">prathamb426@gmail.com</a> or fill
+        out the form below:
+      </p>
+      <br /><br /><iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfrds53uaXfYdoKF-HgvwlUQPbKeCtjH7sx7ZdnFD0KCT133A/viewform?embedded=true"
+        width="640"
+        height="554"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        >Loading…</iframe
+      >
+    </section>
 
-          </p>
-          <div class="project-links">
-            <a class="project-btn demo alt" href="https://pbansal426.github.io/Streamline/" target="_blank">Info</a>
-            <a class="project-btn code alt" href="https://github.com/pbansal426/Streamline" target="_blank">GitHub</a>
-          </div>
-        </div>
-        <div class="project-visual">
-          <img src="assets/images/streamline.png" alt="Flowlyst App Preview" />
-        </div>
-      </div>
-      <div class="project-card" data-aos="zoom-in">
-        <div class="project-info">
-          <h3>Pobi Ree's Album Page</h3>
-          <p>
-            A simple website used for showcasing an album composed by the artist Pobi Ree.
-            Built with <strong>HTML and CSS.</strong>
-          </p>
-          <div class="project-links">
-            <a class="project-btn demo alt" href="https://www.pobiree.com" target="_blank">Visit</a>
-            <a class="project-btn code alt" href="https://github.com/pbansal426/PobiReeAlbum" target="_blank">GitHub</a>
-          </div>
-        </div>
-        <div class="project-visual">
-          <!-- <img src="assets/images/streamline.png" alt="Flowlyst App Preview" /> -->
-        </div>
-      </div>
-      <div class="project-card" data-aos="zoom-in">
-        <div class="project-info">
-          <h3>School CS Event Websites</h3>
-          <p>
-            A set of webpages used to show important information about school-held computer science events such as competitions or hackathons.
-          </p>
-          <div class="project-links">
-            <a class="project-btn demo alt" href="https://vernonhillscs.github.io/" target="_blank">Visit</a>
-            <a class="project-btn code alt" href="https://github.com/vernonhillscs" target="_blank">GitHub</a>
-          </div>
-        </div>
-        <div class="project-visual">
-          <img src="assets/images/vhcs.png" alt="Flowlyst App Preview" />
-        </div>
-      </div>
-
-
-
-
-    </div>
-  </section>
-  
-
-  <!-- SKILLS -->
-  <section id="skills" class="section skills" data-aos="fade-up">
-    <h2>My Skills</h2>
-    <ul class="skills-list">
-      <!-- Fill in your skills -->
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>Node.js</li>
-      <li>Python</li>
-      <li>...</li>
-    </ul>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience" class="section experience" data-aos="fade-up">
-    <h2>Experience</h2>
-    <div class="timeline">
-      <!-- Repeat for each role -->
-      <div class="timeline-item">
-        <h3>Job Title</h3>
-        <h4>Company Name</h4>
-        <p class="timeline-date">Start Date – End Date</p>
-        <p>Brief summary of responsibilities and achievements.</p>
-      </div>
-      <!-- … -->
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section id="education" class="section education" data-aos="fade-up">
-    <h2>Education</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>Degree Name</h3>
-        <h4>University Name</h4>
-        <p class="timeline-date">Graduation Year</p>
-        <p>Major, Minor, GPA, Honors, etc.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section contact" data-aos="fade-up">
-    <h2>Contact Me</h2>
-    <p>Please reach out at <a href="mailto:prathamb426@gmail.com">prathamb426@gmail.com</a> or fill out the form below:</p>
-    <div class="box"><form class="contact-form" action="#" method="POST">
-      <label>
-        Name:<br/>
-        <input type="text" name="name" placeholder="Your Name" required>
-      </label>
-      <label>
-        Your e-mail:<br/>
-        <input type="email" name="email" placeholder="you@example.com" required>
-      </label>
-      <label>
-        Message<br/>
-        <textarea name="message" rows="5" placeholder="Your message…" required></textarea>
-      </label>
-      <button type="submit">Submit</button>
-    </form></div>
-  </section>
-
-  <!-- AOS & Init -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init({ duration: 800, easing: 'ease-out-quart', once: true });
-  </script>
-</body>
+    <!-- AOS & Init -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, easing: "ease-out-quart", once: true });
+    </script>
+  </body>
 </html>

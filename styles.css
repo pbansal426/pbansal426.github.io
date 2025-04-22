@@ -351,3 +351,96 @@ a:hover {
   transform: translateY(-2px);
   opacity: 0.9;
 }
+
+
+/* Base button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--accent);
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover state */
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Active/pressed state */
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Disabled state */
+.btn:disabled,
+.btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Icon spacing (if you’re using an <i> or svg inside) */
+.btn i,
+.btn svg {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+
+/* Skills grid like benrogers.dev */
+.skills-icons {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  padding: 0;
+}
+
+.skills-icons li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.skills-icons li i,
+.skills-icons li img {
+  font-size: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 0.5rem;
+  object-fit: contain;
+}
+
+.skills-icons li img {
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+.skills-icons li:hover {
+  color: #fff; /* stays white */
+  transform: translateY(-4px);
+}
+
+.skills-icons li:hover img {
+  filter: brightness(0) invert(1); /* stays white */
+  transform: scale(1.1);
+}
+
+.custom-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+}
