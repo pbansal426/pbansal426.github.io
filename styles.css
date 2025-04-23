@@ -426,17 +426,20 @@ a:hover {
 }
 
 .skills-icons li img {
-  filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1); */
   transition: filter 0.3s ease, transform 0.3s ease;
+  opacity: 0.6;
 }
 .skills-icons li:hover {
   color: #fff; /* stays white */
+  
   transform: translateY(-4px);
 }
 
 .skills-icons li:hover img {
   filter: brightness(0) invert(1); /* stays white */
   transform: scale(1.1);
+  opacity: 1;
 }
 
 .custom-icon {
